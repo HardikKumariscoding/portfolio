@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardik Kumar - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            display: flex;
+            background: #f9f9f9;
+        }
+
+        /* Sidebar Styles */
+        .sidebar {
+            position: fixed;
+            width: 260px;
+            height: 100vh;
+            background: #1e1e2e;
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: 0.3s ease-in-out;
+        }
+        .sidebar h2 {
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        .sidebar ul {
+            list-style: none;
+            width: 100%;
+        }
+        .sidebar ul li {
+            width: 100%;
+            margin: 10px 0;
+        }
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 12px;
+            border-radius: 6px;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .sidebar ul li a:hover {
+            background: #44475a;
+        }
+
+        /* Main Content */
+        .main-content {
+            margin-left: 280px;
+            padding: 40px;
+            width: calc(100% - 280px);
+            transition: 0.3s ease-in-out;
+        }
+        section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+            transition: 0.3s;
+        }
+        a:hover {
+            color: #0056b3;
+        }
+
+        /* Resume & Cover Letter Buttons */
+        .btn-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .btn {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            transform: translateY(-5px);
+            
+        }
+
+        /* Projects */
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            width: 100%;
+            max-width: 300px;
+            background-color: #0a7efb;
+            border: 2px solid #7cb5f1;
+            border-radius: 10px;
+            overflow: hidden;
+            transform: translate(0vw,0.9rem);
+            transition: 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .webImage img{
+            width: 100%;
+            height: 180px;
+        }
+        .webImage {
+            width: 100%;
+            height: 180px;
+            background: #f9f9f9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .description {
+            padding: 15px;
+            color: white;
+        }
+
+        /* Contact Section */
+        .contact a {
+            font-weight: bold;
+        }
+
+        #capstone ul{
+        list-style: none;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .sidebar {
+                width: 80px;
+                padding: 10px;
+            }
+            .sidebar h2 {
+                font-size: 1rem;
+            }
+            .sidebar ul li a {
+                font-size: 0.9rem;
+                padding: 8px;
+            }
+            .main-content {
+                margin-left: 100px;
+                width: calc(100% - 100px);
+                padding: 20px;
+            }
+            .projects {
+                justify-content: center;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .sidebar {
+                display: none;
+            }
+            .main-content {
+                margin-left: 0;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Hardik Kumar</h2>
+        <ul>
+            <li><a href="#bio">Bio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#academics">Academics & Projects</a></li>
+            <li><a href="#capstone">Capstone Docs</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <section id="bio">
+            <h2>Bio</h2>
+            <p>I'm Hardik Kumar, a passionate software developer and tech enthusiast with a deep interest in web and mobile development. From building microservices with Java Spring Boot to crafting dynamic React and Android applications, I love solving problems and creating innovative solutions. With experience in full-stack development, DevOps, and cloud technologies, I’m always exploring new ways to enhance user experiences and optimize performance. Beyond coding, I have a keen eye for technology trends and enjoy sharing my knowledge. Let's build something great together!</p>
+        </section>
+
+        <section id="about">
+            <h2>About</h2>
+            <div class="btn-container">
+                <a href="Tech_resume.pdf" download class="btn">Download Resume</a>
+                <a href="Cover_letter.pdf" download class="btn">Download Cover Letter</a>
+            </div>
+        </section>
+
+        <section id="academics">
+            <h2>Academics & Projects</h2>
+            <p><strong>Education:</strong> George Brown College – Computer Programming and Analysis</p>
+            <h3>Notable Projects:</h3>
+            
+            <div class="projects">
+                <div class="card">
+                    <div class="webImage">
+                        <img src="ss1.PNG" alt="Project 1" width="100%">
+                    </div>
+                    <div class="description">
+                        <p style="color: rgb(255, 255, 255);"><a style="color: #7cb5f1;" href="https://github.com/HardikKumariscoding/RetroIsNewModern">RetroIsNewModern</a> - A tribute to old apple webdesign, made in HTML,CSS,JS.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="webImage">
+                        <img src="Techbarter.png" alt="Techbarter" width="100%">
+                    </div>
+                    <div class="description" >
+                        <p style="color: rgb(255, 255, 255);"><a style="color: #7cb5f1;" href="#" >Techbarter </a>- An online Marketplace to purchase,recycle,discuss Technology.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="webImage">
+                        <img src="springboot.png" alt="Project 3" width="100%">
+                    </div>
+                    <div class="description">
+                        <p><a href="https://github.com/HardikKumariscoding/COMP3095-ASSIGNMENT-2" style="color: #7cb5f1;">Springboot event booking backend </a> A fully polished Backend for an Event booking made using Java Springboot</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="capstone">
+            <h2>Capstone Docs</h2>
+            <ul>
+                <li><a href="./capstone-docs/F24_T30_ProjectSummary.pdf">Project Summary</a></li>
+                <li><a href="./capstone-docs/F24_T30_ProjectVision.pdf">Project Vision</a></li>
+                <li><a href="./capstone-docs/businessRequirement.pdf">Business Requirements</a></li>
+                <li><a href="./capstone-docs/W25_T30_ProjectPlan.pdf">Project Plan</a></li>
+                <li><a href="./capstone-docs/F24_T30_TechReq.pdf">Analysis and Design Requirments</a></li>
+                <li><a href="./capstone-docs/F24_T30_Mockup.pdf">Mockup</a></li>
+                <li><a href="./capstone-docs/Wireframes.pdf">Wireframes</a></li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:hardikgugnani123@gmail.com">hardikgugnani123@gmail.com</a></p>
+            <p>GitHub: <a href="https://github.com/hardikkumariscoding">github.com/hardikkumariscoding</a></p>
+        </section>
+    </div>
+</body>
+</html>

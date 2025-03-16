@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.sideSection{
+    display: flex;
+    flex-direction: column;
+}
+#SideBar{
+
+width: 20rem;
+height: 45rem;
+position: sticky;
+left: 0;
+top: 0;
+background: rgb(255, 0, 0);
+overflow: hidden;
+
+}
+
+.bio{
+    background-color: blue;
+    width: 74.5rem;
+    height: 44rem;
+    transform: translate(20.1rem,-40rem);
+}
+
+.resume{
+    background-color: rgb(0, 255, 38);
+    width: 74.5rem;
+    height: 44rem;
+    transform: translate(20.1rem,-39rem);
+}
+
+
+
+
